@@ -12,6 +12,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-color: #1a202a;
 }
 header nav ul {
     display: flex;
@@ -20,29 +21,33 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
+
 header a {
     text-decoration: none;
+    color: #9bc4e2;
 }
 header nav ul li a {
-    padding: 10px 15px;
+    ;
+    
    
 }
-/*
-.about-me-wrapper, .contact-me-wrapper  {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    height: 300px;
-    align-items: center;
-  */  
-    
-
-.about-me {
-
+.about-link, .contact-link, .projects-link {
+    border-bottom: 1px solid #9bc4e2;
+    padding: 0 20px;
 }
-.info {
-    
+.about-me-wrapper {
+    margin:0px;
+    text-align: center;
 }
+    
+.hero {
+    background-image: url(images/white-wall.png);
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
 h2 {
    
     display: flex;
@@ -58,27 +63,47 @@ h2 {
     display: flex;
 
 }
+#projects, #about-me {
+    padding: 30px 0;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 33.333% 33.333% 33.333%;
     grid-template-rows: repeat(3, 200px);
-    margin: 0 auto;
+    margin: 40px;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    ;
+}
+.grid-container img{
+    object-fit: cover;
+  width: 100%;
+  max-height: 100%
 }
 .box1 {
   grid-column-start: 1; 
   grid-column-end: 3; 
   grid-row-start: 1; 
   grid-row-end: 3;
+  
+}
+.box2 {
+    grid-column-start: 3; 
+  grid-column-end: 4; 
+  grid-row-start: 1; 
+  grid-row-end: 3;
+  
 }
 .work {
     display: flex;
     height:100%;
     width: 100%;
-    background-color: blueviolet;
+    
+   
 }
 .contact-me-wrapper {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 .profiles {
     margin: 50px auto;
@@ -87,4 +112,11 @@ h2 {
     height:200px;
     width: 144px;
     padding-top: 20px;
+}
+.projects {
+    flex-wrap: wrap;
+}
+.box5 {
+    justify-content: center;
+    margin-left: 0 auto;
 }
