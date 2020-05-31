@@ -77,9 +77,9 @@ header nav ul li a:hover {
     1px 1px 0 rgb(255, 255, 255); 
 }
 h2 {
-   
+    color: #1a202a;
     display: flex;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #9bc4e2;
     text-align: center;
     margin: 040px auto 40px auto;
     width:20%;
@@ -125,7 +125,26 @@ h2 {
 .work {
     height:100%;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
+.description {
+    position: absolute;
+    left: -250px;
+    top: 15px;
+    padding: 20px;
+    border: 1px solid #9bc4e2;
+    background-color: #9bc4e2;
+    transition: .5s;
+}
+.work:hover .description {
+    left: 0px;
+}
+
+.description h4 {
+    font-size: 26px;
+}
+
 
 .contact-me-wrapper {
     display: flex;
@@ -172,4 +191,5 @@ header nav ul {
 .work {
     width: 80%;
     height: auto;
+}
 }
