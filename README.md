@@ -8,7 +8,7 @@ To market myself to future employers and clients
 * CSS
 
 ## Website
-https://lernantino.github.io/portfolio/
+https://ctyrone123.github.io/portfolio/
 
 ## Contribution
 Made with ❤️ by Chris Tyrone
